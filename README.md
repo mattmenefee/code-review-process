@@ -199,6 +199,14 @@ Use the following areas of consideration for pull request review criteria.
 
 ### Data Considerations
 
+| Topic | Things to look for |
+| ----- | ------------------ |
+| Future-proof migrations | If migrations were added, will the migration break in the future?<br/>Migrations that run today can break in the future. The most common cause is migrations that reference application code. Classes and methods can be removed or renamed. See this [awesome blog post](http://blog.testdouble.com/posts/2014-11-04-healthy-migration-habits.html) for examples and solutions. |
+| Maintenance window / Downtime | Will this require a maintenance window?<br/>Code gets deployed first, then migrations run. If the code depends on the migration, you should use a maintenance window when deploying the change. Some migrations might take a significant amount of time to run. In general, prefer more frequent, smaller deploys that don't require a maintenance window. |
+| Sample data | Will this change affect sample data?<br/>Does the migration add new fields, new models, or remove/change existing fields? If the application uses database seeding or has a sample dataset in the form of a database dump or script, update these items to reflect the new state of the database. Also ensure that running the script, importing the database dump, or running the database seeds from an empty database can be executed successfully after this change. |
+| Search indexes | If changes to any search indexes were made, have you verified that the indexes have been properly set up in order to be appropriately updated? |
+| Integrity | Are there appropriate database constraints? Do migrations work in both directions? Are there any field type changes that would lose precision?<br/>Are there transactions used in the code? Are there places where a rollback of a transaction is missing and should be included? |
+
 # Conclusion
 
 

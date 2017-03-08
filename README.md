@@ -163,11 +163,19 @@ Use the following areas of consideration for pull request review criteria.
 | Obvious Mistakes  | Typos, poor variable names, unclear method names, large method definitions, removal of commented out code. Logical omissions or errors.  |
 | Linting Exceptions | Is there sufficient justification for the addition of the linting exception? Can you suggest a way to avoid the exception? If it takes longer than a short amount of time to come up with alternatives, than otherwise allow it. |
 | Usage of frameworks/libraries | Are the included frameworks/libraries being used as designed? Is there a more idiomatic way of using the particular framework/library in question? |
-| Maintainability | Are any aspects of the change difficult to understand or follow? Can you suggest an alternative implementation or refactor to increase the readability/understandability and/or maintainability?<br/><br/>Can you gather context for the diff? i.e., if you're totally unfamiliar with that part of the codebase, could you roughly tell what that part of the system does and how the diff affects it?<br/><br/>Can you actually understand what the code is doing? The diff should be understandable by any member of the team. If it is hard to reason about, let the author know. |
+| Maintainability | Are any aspects of the change difficult to understand or follow? Can you suggest an alternative implementation or refactor to increase the readability/understandability and/or maintainability?<br/>Can you gather context for the diff? i.e., if you're totally unfamiliar with that part of the codebase, could you roughly tell what that part of the system does and how the diff affects it?<br/>Can you actually understand what the code is doing? The diff should be understandable by any member of the team. If it is hard to reason about, let the author know. |
 | Impact of codebase | Is there a wider impact on the codebase beyond what was changed that has not been considered? |
 | Commit messages | The first line should be a capitalized, short (80 characters or less) summary of the commit. Leave a blank line and then write a paragraph about the details of the change. Keep line length less than 80 characters. Your commit message editor should be set up to do this for you. A bulleted list of changes and their motivations is encouraged. Read [this](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). |
 
 ### Testing
+
+| Topic | Things to look for |
+| ----- | ------------------ |
+| Test Coverage | Is there adequate test coverage for the changed lines or critical code paths based on previously established testing conventions within the codebase? |
+| Testing level | Is the code tested at the right level? Can any of the long-running tests be changed to faster executing tests? Faster executing types of tests (e.g. unit tests) are preferred over slower tests (e.g. integration or acceptance tests). |
+| Test value | Do the tests (non-trivially) pass, assert a valuable behavior, and do not (if you can help it) test implementation details? Can you suggest any ways of strengthening the tests?<br/>Are the tests thoughtful? Do they cover the failure conditions? Are they easy to read? How fragile are they? How big are the tests? Are they slow? |
+| Branching | Do branching paths have adequate test coverage? |
+| Boundaries | Are unit tests isolated? Do integration tests assess meaningful behavior? Are integration tests adding too much coverage that should be tested at the unit level? |
 
 ### User Experience
 

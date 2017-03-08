@@ -3,7 +3,7 @@ Writing high quality, easily maintainable code: A Guide
 
 # Introduction
 
-Hey there!
+Hi there!
 
 This is a guide for writing high quality code. It's a set of principles and practices designed to maximize quality and maintainability without compromising velocity, timeline, or budget.
 
@@ -85,6 +85,39 @@ Provide context for the motivation of the change in the pull request description
 Be aware of how you ask questions. Suggest approaches or provoke exploration. See [Advice and Best Practices](#advice-and-best-practices).
 
 ## Author
+
+The author of the pull request drives this process. This individual is responsible for keeping the process moving and coordinating communication and action as necessary.
+
+### Open Pull Request
+
+Open a pull request as early as possible. This allows other developers to be informed of the changes that you're proposing.
+
+- Set the pull request's status to `wip`
+- Document the requirements for the change (if appropriate) in the pull request description (e.g. a link to the feature story)
+- Provide before and after screenshots of the changing interface (if relevant)
+
+### Solicit Feedback
+
+Solicit feedback from other team members while the pull request is in progress by *@mentioning* them.
+
+### Prep for Review
+
+Once you consider the change is finished, prepare the pull request for review:
+
+1. Complete a review of the pull request yourself. Specific items to ensure:
+  1. Adherence to the project's style guide
+  1. Adequate test coverage has been added for the changes
+1. Ensure the pull request passes Continuous Integration
+1. Update the pull request's status to `for review`
+1. Request a review on the pull request to alert your team members that the change is ready for review
+
+### Review Pull Request
+
+Review the pull request, referencing the [Areas of Consideration](#areas-of-consideration) chart below.
+
+### Address Review Feedback
+
+If the review process yields actionable feedback, respond to the comments left on the pull request until a resolution is obtained. Change the pull request's status back to `wip` while significant feedback is being addressed, as necessary. Push any additional commits required to resolve the feedback to GitHub using [an auto-squashing strategy](https://robots.thoughtbot.com/autosquashing-git-commits). Repeat this loop until all stakeholders are satisfied.
 
 ## Pull Request Reviewer
 

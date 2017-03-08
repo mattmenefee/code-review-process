@@ -179,6 +179,15 @@ Use the following areas of consideration for pull request review criteria.
 
 ### User Experience
 
+| Topic | Things to look for |
+| ----- | ------------------ |
+| Meets requirements | Does this change meet _**all**_ of the requirements (as specified in the Pivotal story and other sources)? When previewing the change, does it meet both the letter and spirit of the requirements? |
+| Edge cases | Can you identify any unhandled edge cases based on the assumptions being made and/or the requirements? |
+| User Experience | Does the change result in an intuitive and well-conceived user experience? |
+| Adherence to design patterns | Are any interface changes consistent with existing visual design patterns? |
+| Smoke testing | Did smoke testing reveal any less than ideal user interactions? |
+| Compatibility | Is this change likely to run into any compatibility issues on different devices or in different browsers? If so, were there discussions with the client about a degraded experience on those devices. |
+
 ### Housekeeping
 
 ### Data Considerations

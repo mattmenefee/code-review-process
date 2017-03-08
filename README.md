@@ -68,17 +68,17 @@ Pull request reviews and feedback requests should be responded to promptly, idea
 
 ### Contributions from other developers
 
-The author of the pull request is responsible for the proposed changes and as a result, their changes take precedence over contributions from other developers. If another developer wishes to contribute additional changes to the pull request, the second developer should coordinate with the author to facilitate those changes and ensure that they don’t conflict with the author’s intentions.
+The author of the pull request is responsible for the proposed changes and as a result, their changes take precedence over contributions from other developers. If another developer wishes to contribute additional changes to the pull request, the second developer should coordinate with the author to facilitate those changes and ensure that they don't conflict with the author's intentions.
 
 ### Cleaning up
 
-Don’t rewrite git history once you have asked for feedback. Other developers should pull your changes and comment on them, so changing historical commits during review is discouraged. If you must, be sure to coordinate with the team.
+Don't rewrite git history once you have asked for feedback. Other developers should pull your changes and comment on them, so changing historical commits during review is discouraged. If you must, be sure to coordinate with the team.
 
 Before merging a reviewed and improved pull request, consider grouping related changes and removing fixups through a rebase.
 
 ### Review context
 
-Provide context for the motivation of the change in the pull request description. If there isn’t enough context, the author and reviewer should review the pull request together.
+Provide context for the motivation of the change in the pull request description. If there isn't enough context, the author and reviewer should review the pull request together.
 
 ### Attitude
 
@@ -136,7 +136,20 @@ Once the pull request has achieved sign off and passed all requirements for merg
 
 ## Pull Request Reviewer
 
+When a pull request review has been initiated, complete a code review while referencing the [Areas of Consideration](#areas-of-consideration) chart below. Upon satisfactory review, leave a comment on the pull request with a :thumbsup:.
+
+**Adopt this mindset:**
+
+> Trust no one. Question everything (kindly). Assume that the author has made mistakes that you need to catch. Save your users from those bugs.
+
 ### Advice and Best Practices
+
+-	**Ask questions:** How does this method work? If this requirement changes, what else would have to change? How could we make this more maintainable?
+-	**Compliment / reinforce good practices:** One of the most important parts of the code review is to reward developers for growth and effort. Few things feel better than getting praise from a peer. Try to offer as many positive comments as possible.
+-	**Discuss in person for more detailed points:** On occasion, a recommended architectural change might be large enough that it's easier to discuss it in person rather than in the comments. Similarly, if you're discussing a point and it goes back and forth, it's better to often pick it up in person and finish out the discussion. After the offline discussion, post a quick summary on the pull request so that other team members can follow along.
+-	**Explain reasoning:** It's best both to ask if there's a better alternative and justify why you think it's worth fixing. Sometimes it can feel like the changes suggested can seem nit-picky without context or explanation.
+-	**Make it about the code:** It's easy to take notes from code reviews personally, especially if we take pride in our work. It's best to make discussions about the code than about the developer. It lowers resistance and it's not about the developer anyway, it's about improving the quality of the code.
+-	**Suggest importance of fixes:** Offer many suggestions, not all of which need to be acted upon. Clarifying if an item is important to fix before it can be considered finished is useful both for the reviewer and the reviewee. It makes the results of a review clear and actionable.
 
 ## Areas of Consideration
 

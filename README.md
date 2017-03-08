@@ -11,6 +11,7 @@ This is a guide for writing high quality code. It's a set of principles and prac
 - Introduction
 - [tldr;](#tldr)
 - [Project Setup](#project-setup)
+- [Pull Request Responsibilities](#pull-request-responsibilities)
 - [Conclusion](#conclusion)
 
 # tldr;
@@ -50,3 +51,28 @@ Staging environments allow the feature to be reviewed and smoke tested before it
 ## Install code linters
 
 Automate style guide and other quality checks by using code linting tools. This allows the reviewer to focus on less nitpicky issues while ensuring these easily correctable issues get addressed before review by a human.
+
+# Pull Request Responsibilities
+
+The pull request process is composed of a series of participants: the author of the changes, the pull request reviewed, and (optionally) any other stakeholders. There are general guidelines that all participants should follow, as well as specific responsibilities for the core participants.
+
+## General Guidelines
+
+### Pull Request Size
+
+To get valuable feedback, a reviewer must be able to easily read the requested change and understand the motivations with little background. Small pull requests greatly improve the ability for a reviewer to give valuable feedback. A small diff also makes a follow-up review upon the implementation of feedback much easier. Aim for pull requests to contain less than 400 lines of diff<sup>[1](#footnote1)</sup>.
+
+### Response Timeliness
+
+Pull request reviews and feedback requests should be responded to promptly, ideally by the end of the next business day.
+
+# Conclusion
+
+
+## Credits
+
+An initial version of this guide was originally developed at [smartlogic](smartlogic.io), a web and mobile development consultancy in Baltimore, MD.
+
+---
+
+<a name="footnote1">1</a>: GitHub provides diff metrics on the pull request files page

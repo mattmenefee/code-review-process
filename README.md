@@ -119,6 +119,21 @@ Review the pull request, referencing the [Areas of Consideration](#areas-of-cons
 
 If the review process yields actionable feedback, respond to the comments left on the pull request until a resolution is obtained. Change the pull request's status back to `wip` while significant feedback is being addressed, as necessary. Push any additional commits required to resolve the feedback to GitHub using [an auto-squashing strategy](https://robots.thoughtbot.com/autosquashing-git-commits). Repeat this loop until all stakeholders are satisfied.
 
+### Re-review
+
+If significant changes were introduced during the feedback review step, initiate another review of the pull request by @mentioning the designated pull request reviewers.
+
+### Sign Off & Prep for Merge
+
+After the pull request has been reviewed, received feedback has been adequately addressed, and all stakeholders have signed off on it, prep the pull request for merge:
+-	Rebase the branch onto master and resolve any merge conflicts
+-	Squash any fixup commits to clean up the version history, force pushing the branch to GitHub if necessary. Consider setting `--force-with-lease` in your Git config to [protect against accidental overwrites](https://developer.atlassian.com/blog/2015/04/force-with-lease/).
+-	Ensure the pull request again passes Continuous Integration
+
+### Merge
+
+Once the pull request has achieved sign off and passed all requirements for merge, @mention the designated pull request merger to have the pull request merged.
+
 ## Pull Request Reviewer
 
 ### Advice and Best Practices

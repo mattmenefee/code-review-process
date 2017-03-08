@@ -84,6 +84,24 @@ Provide context for the motivation of the change in the pull request description
 
 Be aware of how you ask questions. Suggest approaches or provoke exploration. See [Advice and Best Practices](#advice-and-best-practices).
 
+## Author
+
+## Pull Request Reviewer
+
+### Advice and Best Practices
+
+## Areas of Consideration
+
+### Code Style and Formatting
+
+### Testing
+
+### User Experience
+
+### Housekeeping
+
+### Data Considerations
+
 # Conclusion
 
 

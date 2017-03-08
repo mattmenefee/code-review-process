@@ -190,6 +190,13 @@ Use the following areas of consideration for pull request review criteria.
 
 ### Housekeeping
 
+| Topic | Things to look for |
+| ----- | ------------------ |
+| Documentation | Is developer setup and other documentation up-to-date? Will the development team be able to set up/update their development environment based on the documentation? |
+| Deployment considerations | If there are infrastructure or dependency changes, are deployment considerations taken into account? Is there a plan established to update non-development/test environments? |
+| Stale code | If code was removed as part of this change, is there now unused code (CSS, javascript, ruby methods, metrics tracking, etc.) or files that should also be removed? |
+| Redundancy | Does the change introduce new code that effectively does the same thing as existing methods, test steps, etc.? |
+
 ### Data Considerations
 
 # Conclusion

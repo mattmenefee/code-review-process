@@ -153,7 +153,19 @@ When a pull request review has been initiated, complete a code review while refe
 
 ## Areas of Consideration
 
+Use the following areas of consideration for pull request review criteria.
+
 ### Code Style and Formatting
+
+| Topic | Things to look for |
+| ----- | ------------------ |
+| Style Guide Violations  | Violations of the style guide that the linters don't catch yet. Does this change introduce any inconsistencies with the agreed upon conventions outlined in the project's style guide?  |
+| Obvious Mistakes  | Typos, poor variable names, unclear method names, large method definitions, removal of commented out code. Logical omissions or errors.  |
+| Linting Exceptions | Is there sufficient justification for the addition of the linting exception? Can you suggest a way to avoid the exception? If it takes longer than a short amount of time to come up with alternatives, than otherwise allow it. |
+| Usage of frameworks/libraries | Are the included frameworks/libraries being used as designed? Is there a more idiomatic way of using the particular framework/library in question? |
+| Maintainability | Are any aspects of the change difficult to understand or follow? Can you suggest an alternative implementation or refactor to increase the readability/understandability and/or maintainability?<br/><br/>Can you gather context for the diff? i.e., if you're totally unfamiliar with that part of the codebase, could you roughly tell what that part of the system does and how the diff affects it?<br/><br/>Can you actually understand what the code is doing? The diff should be understandable by any member of the team. If it is hard to reason about, let the author know. |
+| Impact of codebase | Is there a wider impact on the codebase beyond what was changed that has not been considered? |
+| Commit messages | The first line should be a capitalized, short (80 characters or less) summary of the commit. Leave a blank line and then write a paragraph about the details of the change. Keep line length less than 80 characters. Your commit message editor should be set up to do this for you. A bulleted list of changes and their motivations is encouraged. Read [this](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html). |
 
 ### Testing
 

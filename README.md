@@ -66,6 +66,24 @@ To get valuable feedback, a reviewer must be able to easily read the requested c
 
 Pull request reviews and feedback requests should be responded to promptly, ideally by the end of the next business day.
 
+### Contributions from other developers
+
+The author of the pull request is responsible for the proposed changes and as a result, their changes take precedence over contributions from other developers. If another developer wishes to contribute additional changes to the pull request, the second developer should coordinate with the author to facilitate those changes and ensure that they don’t conflict with the author’s intentions.
+
+### Cleaning up
+
+Don’t rewrite git history once you have asked for feedback. Other developers should pull your changes and comment on them, so changing historical commits during review is discouraged. If you must, be sure to coordinate with the team.
+
+Before merging a reviewed and improved pull request, consider grouping related changes and removing fixups through a rebase.
+
+### Review context
+
+Provide context for the motivation of the change in the pull request description. If there isn’t enough context, the author and reviewer should review the pull request together.
+
+### Attitude
+
+Be aware of how you ask questions. Suggest approaches or provoke exploration. See [Advice and Best Practices](#advice-and-best-practices).
+
 # Conclusion
 
 

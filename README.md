@@ -20,11 +20,11 @@ This is a guide for writing high quality code. It's a set of principles and prac
 
 Set up the project for success before its underway! Complete the following checklist items when a project is getting started in order to put in place easy conventions and habits for facilitating the code review process without friction.
 
-- [ ] Configure Pull Request Labels
-- [ ] Set up Continuous Integration
-- [ ] Adopt a branching strategy
-- [ ] Stand up a staging environment
-- [ ] Install code linters
+- [x] Configure Pull Request Labels
+- [x] Set up Continuous Integration
+- [x] Adopt a branching strategy
+- [x] Stand up a staging environment
+- [x] Install code linters
 
 ## Configure Pull Request Labels
 
@@ -71,8 +71,10 @@ Pull request reviews and feedback requests should be responded to promptly, idea
 
 ## Credits
 
-An initial version of this guide was originally developed at [smartlogic](smartlogic.io), a web and mobile development consultancy in Baltimore, MD.
+An initial version of this guide was originally developed at [smartlogic](http://smartlogic.io), a web and mobile development consultancy in Baltimore, MD.
 
 ---
+
+### Footnotes
 
 <a name="footnote1">1</a>: GitHub provides diff metrics on the pull request files page

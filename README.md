@@ -214,6 +214,11 @@ Use the following areas of consideration for pull request review criteria.
 
 An initial version of this guide was originally developed at [smartlogic](http://smartlogic.io), a web and mobile development consultancy in Baltimore, MD.
 
+## Contributing
+
+The guide is still a work in progress&mdash;we encourage you to contribute! Please check out the [contribution guidelines](CONTRIBUTING.md) for guidelines on how to proceed. Feel free to open issues or send pull requests with improvements. Thanks in
+advance for your help!
+
 ---
 
 ### Footnotes

@@ -11,8 +11,15 @@ This is a guide for writing high quality code. It's a set of principles and prac
 - Introduction
 - [tldr;](#tldr)
 - [Project Setup](#project-setup)
+  - [Configure Pull Request Labels](#configure-pull-request-labels)
+  - [Set up Continuous Integration](#set-up-continuous-integration)
+  - [Adopt a branching strategy](#adopt-a-branching-strategy)
+  - [Stand up a staging environment](#stand-up-a-staging-server)
+  - [Install code linters](#install-code-linters)
 - [Pull Request Responsibilities](#pull-request-responsibilities)
 - [Conclusion](#conclusion)
+  - [Contributing](#contributing)
+  - [Credits](#credits)
 
 # tldr;
 
@@ -60,7 +67,7 @@ The pull request process is composed of a series of participants: the author of 
 
 ### Pull Request Size
 
-To get valuable feedback, a reviewer must be able to easily read the requested change and understand the motivations with little background. Small pull requests greatly improve the ability for a reviewer to give valuable feedback. A small diff also makes a follow-up review upon the implementation of feedback much easier. Aim for pull requests to contain less than 400 lines of diff<sup>[1](#footnote1)</sup>.
+To get valuable feedback, a reviewer must be able to easily read the requested change and understand the motivations with little background. Small pull requests greatly improve the ability for a reviewer to give valuable feedback. A small diff also makes a follow-up review upon the implementation of feedback much easier. Aim for pull requests to contain less than 400 lines of diff (GitHub provides diff metrics on the pull request files page).
 
 ### Response Timeliness
 
@@ -210,17 +217,11 @@ Use the following areas of consideration for pull request review criteria.
 # Conclusion
 
 
-## Credits
-
-An initial version of this guide was originally developed at [smartlogic](http://smartlogic.io), a web and mobile development consultancy in Baltimore, MD.
-
 ## Contributing
 
 The guide is still a work in progress&mdash;we encourage you to contribute! Please check out the [contribution guidelines](CONTRIBUTING.md) for guidelines on how to proceed. Feel free to open issues or send pull requests with improvements. Thanks in
 advance for your help!
 
----
+## Credits
 
-### Footnotes
-
-<a name="footnote1">1</a>: GitHub provides diff metrics on the pull request files page
+An initial version of this guide was originally developed at [smartlogic](http://smartlogic.io), a web and mobile development consultancy in Baltimore, MD.

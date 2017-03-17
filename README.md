@@ -7,6 +7,8 @@ Hi there!
 
 This is a guide for writing high quality code. It's a set of principles and practices designed to maximize quality and maintainability without compromising velocity, timeline, or budget.
 
+# tldr;
+
 # Contents
 - Introduction
 - [tldr;](#tldr)
@@ -17,11 +19,25 @@ This is a guide for writing high quality code. It's a set of principles and prac
   - [Stand up a staging environment](#stand-up-a-staging-server)
   - [Install code linters](#install-code-linters)
 - [Pull Request Responsibilities](#pull-request-responsibilities)
+  - [General Guidelines](#general-guidelines)
+    - [Pull Request Size](#pull-request-size)
+    - [Response Timeliness](#response-timeliness)
+    - [Contributions from other developers](#contributions-from-other-developers)
+    - [Cleaning up](#cleaning-up)
+    - [Review context](#review-context)
+    - [Attitude](#attitude)
+  - [Author](#author)
+  - [Pull Request Reviewer](#pull-request-reviewer)
+    - [Advice and Best Practices](#advice-and-best-practices)
+  - [Areas of Consideration](#areas-of-consideration)
+    - [Code Style and Formatting](#code-style-and-formatting)
+    - [Testing](#testing)
+    - [User Experience](#user-experience)
+    - [Housekeeping](#housekeeping)
+    - [Data Considerations](#data-considerations)
 - [Conclusion](#conclusion)
   - [Contributing](#contributing)
   - [Credits](#credits)
-
-# tldr;
 
 # Project Setup
 

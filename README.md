@@ -35,9 +35,7 @@ This is a guide for writing high quality code. It's a set of principles and prac
     - [User Experience](#user-experience)
     - [Housekeeping](#housekeeping)
     - [Data Considerations](#data-considerations)
-- [Conclusion](#conclusion)
-  - [Contributing](#contributing)
-  - [Credits](#credits)
+- [Additional References](#additional-references)
 
 # Project Setup
 
@@ -230,14 +228,25 @@ Use the following areas of consideration for pull request review criteria.
 | Search indexes | If changes to any search indexes were made, have you verified that the indexes have been properly set up in order to be appropriately updated? |
 | Integrity | Are there appropriate database constraints? Do migrations work in both directions? Are there any field type changes that would lose precision?<br/>Are there transactions used in the code? Are there places where a rollback of a transaction is missing and should be included? |
 
-# Conclusion
+# Additional References
 
+- [10 facts about code reviews and quality](https://blog.codacy.com/10-facts-about-code-reviews-and-quality-c5adf2e869fe#.ae5q5w5hw) *Codacy*
+- [Code Review Best Practices](https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html) *Kevin London*
+- [Moving Fast With High Code Quality](https://engineering.quora.com/Moving-Fast-With-High-Code-Quality) *Engineering at Quora*
+- [Stop More Bugs with our Code Review Checklist](http://blog.fogcreek.com/increase-defect-detection-with-our-code-review-checklist-example/) *Fog Creek*
+- [thoughtbot's Code Review Guide](https://github.com/thoughtbot/guides/tree/master/code-review) *thoughtbot*
+- [ThinkUp's Pull Request Checklist](https://github.com/ThinkUpLLC/ThinkUp/wiki/Developer-Guide:-Pull-Request-Checklist) *ThinkUp*
+- [Effective Code Review](https://alexgaynor.net/2013/sep/26/effective-code-review/) *Alex Gaynor*
+- [Giving Better Code Reviews](https://medium.com/@mrjoelkemp/giving-better-code-reviews-16109e0fdd36#.qyki8oniz) *Joel Kemp*
+- [What we learned from Google: code reviews aren’t just for catching bugs](https://blog.fullstory.com/what-we-learned-from-google-code-reviews-arent-just-for-catching-bugs-b125a13aa292#.ou9mdrqz5) *Full Story*
+- [How terrible code gets written by perfectly sane people](https://chrismm.com/blog/how-terrible-code-gets-written-by-perfectly-sane-people/) *Christian Maioli*
+- [Healthy ActiveRecord migrations habits](http://blog.testdouble.com/posts/2014-11-04-healthy-migration-habits.html) *Test Double*
 
-## Contributing
+# Contributing
 
 The guide is still a work in progress&mdash;we encourage you to contribute! Please check out the [contribution guidelines](CONTRIBUTING.md) for guidelines on how to proceed. Feel free to open issues or send pull requests with improvements. Thanks in
 advance for your help!
 
-## Credits
+# Credits
 
 An initial version of this guide was originally developed at [smartlogic](http://smartlogic.io), a web and mobile development consultancy in Baltimore, MD.

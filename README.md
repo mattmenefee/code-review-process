@@ -13,7 +13,7 @@ This is a guide for writing high quality code. It's a set of principles and prac
 - Introduction
 - [tldr;](#tldr)
 - [Project Setup](#project-setup)
-  - [Configure Pull Request Labels](#configure-pull-request-labels)
+  - [Configure pull request status tracking](#configure-pull-request-status-tracking)
   - [Set up Continuous Integration](#set-up-continuous-integration)
   - [Adopt a branching strategy](#adopt-a-branching-strategy)
   - [Stand up a staging environment](#stand-up-a-staging-server)
@@ -49,7 +49,7 @@ Set up the project for success before its underway! Complete the following check
 - [x] Stand up a staging environment
 - [x] Install code linters
 
-## Configure Pull Request Labels
+## Configure pull request status tracking
 
 Set up GitHub labels in order to easily track the status of a pull request. Configure at least the following labels. Add additional labels as necessary.
 -	**wip**: a pull request is in progress. There is no need to review it unless you are specifically *@mentioned*. Use the color orange so it easily stands out.
@@ -62,7 +62,7 @@ Using a Continuous Integration server allows for easy verification that the chan
 
 ## Adopt a branching strategy
 
-Define a branching strategy in your project's documentation, wiki, or Readme. This informs developers how a feature will go through the development process and eventually end up in Production. A good default is to assign `master` as *staging ready* and then use tags to assign a particular commit as *production ready*. This makes it frictionless to additionally maintain a changelog.
+Define a branching strategy in your project's documentation, wiki, or Readme. This informs developers how a feature will go through the development process and eventually end up in Production. A good default is to assign `master` as *staging ready* and then use tags to assign a particular commit as *production ready*. This makes it frictionless to additionally maintain a changelog. Also consider using [Git Flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html) as a branching model.
 
 ## Stand up a staging environment
 

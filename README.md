@@ -41,7 +41,7 @@ Writing high quality, easily maintainable code can be achieved by implementing a
 
 # Project Setup
 
-Set up the project for success before its underway! Complete the following checklist items when a project is getting started in order to put in place easy conventions and habits for facilitating the code review process without friction.
+Set up the project for success before it's underway! Complete the following checklist items when a project is getting started in order to put in place easy conventions and habits for facilitating the code review process without friction.
 
 - [x] Configure Pull Request Labels
 - [x] Set up Continuous Integration
@@ -66,7 +66,7 @@ Define a branching strategy in your project's documentation, wiki, or Readme. Th
 
 ## Stand up a staging environment
 
-Staging environments allow the feature to be reviewed and smoke tested before it goes live in Production. This can catch any issues that the test suite didn't find and also allow the change to be reviewed without necessarily having a local development environment set up. A few tips:
+Staging environments allow the feature to be reviewed and smoke tested before it goes live in Production. This can catch any issues that the test suite didn't find and also allow the change to be reviewed without necessarily having a local development environment setup. A few tips:
 - Deploy `master` to it regularly or automatically
 - Ensure it has realistic data to test with
 - Keep its architecture similar to the production environment
@@ -168,7 +168,7 @@ When a pull request review has been initiated, complete a code review while refe
 ### Advice and Best Practices
 
 -	**Ask questions:** How does this method work? If this requirement changes, what else would have to change? How could we make this more maintainable?
--	**Compliment / reinforce good practices:** One of the most important parts of the code review is to reward developers for growth and effort. Few things feel better than getting praise from a peer. Try to offer as many positive comments as possible.
+-	**Complement / reinforce good practices:** One of the most important parts of the code review is to reward developers for growth and effort. Few things feel better than getting praise from a peer. Try to offer as many positive comments as possible.
 -	**Discuss in person for more detailed points:** On occasion, a recommended architectural change might be large enough that it's easier to discuss it in person rather than in the comments. Similarly, if you're discussing a point and it goes back and forth, it's better to often pick it up in person and finish out the discussion. After the offline discussion, post a quick summary on the pull request so that other team members can follow along.
 -	**Explain reasoning:** It's best both to ask if there's a better alternative and justify why you think it's worth fixing. Sometimes it can feel like the changes suggested can seem nit-picky without context or explanation.
 -	**Make it about the code:** It's easy to take notes from code reviews personally, especially if we take pride in our work. It's best to make discussions about the code than about the developer. It lowers resistance and it's not about the developer anyway, it's about improving the quality of the code.

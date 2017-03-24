@@ -9,6 +9,8 @@ This is a guide for writing high quality code. It's a set of principles and prac
 
 # tldr;
 
+Writing high quality, easily maintainable code can be achieved by implementing a process for collaboration, review and feedback. Collaborate with other team members by announcing proposed changes earlier, request a review when the change is finalized, and use automated code review tools to catch [easy to miss issues](#review-checklist-areas-of-consideration) and style inconsistencies. Set up additional infrastructure to facilitate usability testing and ensure a passing automated test suite, such as staging servers and continuous integration.
+
 # Contents
 - Introduction
 - [tldr;](#tldr)
@@ -29,7 +31,7 @@ This is a guide for writing high quality code. It's a set of principles and prac
   - [Author](#author)
   - [Pull Request Reviewer](#pull-request-reviewer)
     - [Advice and Best Practices](#advice-and-best-practices)
-  - [Areas of Consideration](#areas-of-consideration)
+  - [Review Checklist & Areas of Consideration](#review-checklist-areas-of-consideration)
     - [Code Style and Formatting](#code-style-and-formatting)
     - [Testing](#testing)
     - [User Experience](#user-experience)
@@ -134,7 +136,7 @@ Once you consider the change is finished, prepare the pull request for review:
 
 ### Review Pull Request
 
-Review the pull request, referencing the [Areas of Consideration](#areas-of-consideration) chart below.
+Review the pull request, referencing the [Review Checklist & Areas of Consideration](#review-checklist-areas-of-consideration) chart below.
 
 ### Address Review Feedback
 
@@ -157,7 +159,7 @@ Once the pull request has achieved sign off and passed all requirements for merg
 
 ## Pull Request Reviewer
 
-When a pull request review has been initiated, complete a code review while referencing the [Areas of Consideration](#areas-of-consideration) chart below. Upon satisfactory review, leave a comment on the pull request with a :thumbsup:.
+When a pull request review has been initiated, complete a code review while referencing the [Review Checklist & Areas of Consideration](#review-checklist-areas-of-consideration) chart below. Upon satisfactory review, leave a comment on the pull request with a :thumbsup:.
 
 **Adopt this mindset:**
 
@@ -172,7 +174,7 @@ When a pull request review has been initiated, complete a code review while refe
 -	**Make it about the code:** It's easy to take notes from code reviews personally, especially if we take pride in our work. It's best to make discussions about the code than about the developer. It lowers resistance and it's not about the developer anyway, it's about improving the quality of the code.
 -	**Suggest importance of fixes:** Offer many suggestions, not all of which need to be acted upon. Clarifying if an item is important to fix before it can be considered finished is useful both for the reviewer and the reviewee. It makes the results of a review clear and actionable.
 
-## Areas of Consideration
+## Review Checklist & Areas of Consideration
 
 Use the following areas of consideration for pull request review criteria.
 
